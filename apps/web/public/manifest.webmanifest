@@ -1,0 +1,28 @@
+{
+  "name": "Dois Pontos",
+  "short_name": "Dois Pontos",
+  "description": "Rotina e finanças para casais organizarem a vida individual e compartilhada.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0d0c1d",
+  "theme_color": "#4f46e5",
+  "categories": ["productivity", "finance", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

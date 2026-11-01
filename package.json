@@ -1,0 +1,36 @@
+{
+  "name": "dois-pontos",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Dois Pontos - rotina e finanças para casais",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,magenta \"npm run dev -w @dois-pontos/api\" \"npm run dev -w @dois-pontos/web\"",
+    "build": "npm run build -w @dois-pontos/api && npm run build -w @dois-pontos/web",
+    "typecheck": "npm run typecheck -w @dois-pontos/api && npm run typecheck -w @dois-pontos/web",
+    "test": "npm run test -w @dois-pontos/api && npm run test -w @dois-pontos/web",
+    "lint": "eslint .",
+    "db:migrate": "npm run db:migrate -w @dois-pontos/api",
+    "start": "npm run start -w @dois-pontos/api"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true,
+    "esbuild@0.28.2": true
+  }
+}
